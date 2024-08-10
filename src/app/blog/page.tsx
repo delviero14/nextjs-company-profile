@@ -4,6 +4,7 @@ import Wrapper from "@/components/wrapper";
 import { CardBlog } from "@/components/card";
 import { IBlogs } from "@/type/blog";
 import { getBlogs } from "@/lib/blog";
+import Features from "@/components/Features";
 
 export default async function Blog() {
   const blogs = await getBlogs()
@@ -120,6 +121,7 @@ export default async function Blog() {
           </div>
         </div>
       </section>
+      <Features/>
     </>
   );
 };
